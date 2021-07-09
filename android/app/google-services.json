@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "819899015041",
+    "project_id": "mygallarry",
+    "storage_bucket": "mygallarry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819899015041:android:96d7ae9b2c9caf2d5dd280",
+        "android_client_info": {
+          "package_name": "app.my.gallarry.my_gallarry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819899015041-s0oaescsll7ihj046kt9vj85vfceckr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrsBFiZkAY5Fn6iPMUOXURcneWldPwBF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819899015041-s0oaescsll7ihj046kt9vj85vfceckr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
