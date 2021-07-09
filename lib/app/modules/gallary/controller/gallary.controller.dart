@@ -45,7 +45,7 @@ class GallarryController extends GetxController {
             'pageSize=50&excludeNonAppCreatedData=true'),
         headers: await loginCtl.currentUser!.value.authHeaders);
     var result = ListAlbumsResponse.fromJson(jsonDecode(response.body));
-    if(result.albums != null) {
+    if (result.albums != null) {
       albums.value = result.albums!;
     }
     loading.value = false;

@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         );
       },
       locale: Get.deviceLocale,
-      title: "My App",
+      title: "My Gallarry",
       initialRoute: Routes.LOGIN,
       getPages: AppPages.pages,
       defaultTransition: Transition.fadeIn,

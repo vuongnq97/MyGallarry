@@ -26,7 +26,7 @@ class AlbumController extends GetxController {
     getImages();
   }
 
-  Future<SearchMediaItemsResponse> getImages() async {
+  Future<void> getImages() async {
     loading.value = true;
     update();
     SearchMediaItemsRequest request =
@@ -42,7 +42,6 @@ class AlbumController extends GetxController {
     }
     loading.value = false;
     update();
-    return SearchMediaItemsResponse.fromJson(jsonDecode(response.body));
   }
 
   inAlbum(String uploadToken, String albumId, String description) {
@@ -55,7 +54,7 @@ class AlbumController extends GetxController {
   Future<void> batchCreateMediaItems(
       BatchCreateMediaItemsRequest request) async {
     print(request.toJson());
-    final response = await http.post(
+    await http.post(
       Uri.parse(
           'https://photoslibrary.googleapis.com/v1/mediaItems:batchCreate'),
       body: jsonEncode(request),
